@@ -75,7 +75,7 @@ function LeaveRequestForm(props) {
             const token = localStorage.getItem('token')
            
             const [originResponse] = await Promise.all([
-                axios.get(`hhttp://4.236.184.244:8086/api/v1/employeeManager/origin/${employeeId}`, {
+                axios.get(`http://4.236.184.244:8086/api/v1/employeeManager/origin/${employeeId}`, {
                     method: 'GET',
                     headers: {
                       'Authorization' : `Bearer ${token}`,
